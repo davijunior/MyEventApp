@@ -24,6 +24,7 @@ export interface User {
 export const mockUsers: User[] = [
   { id: 'u1', name: 'Empresa A', role: 'company' },
   { id: 'u2', name: 'Freela João', role: 'freelancer', services: ['garçom', 'segurança'] },
+  { id: 'u3', name: 'Freela Maria', role: 'freelancer', services: ['garçom', 'cozinha'] },
 ];
 
 export const mockEvents: Event[] = [
