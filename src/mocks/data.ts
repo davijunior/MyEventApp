@@ -18,13 +18,15 @@ export interface User {
   id: string;
   name: string;
   role: Role;
-  services?: string[];  // para freelancers
+  skills?: string[];
+  email?: string;
 }
 
 export const mockUsers: User[] = [
   { id: 'u1', name: 'Empresa A', role: 'company' },
-  { id: 'u2', name: 'Freela João', role: 'freelancer', services: ['garçom', 'segurança'] },
-  { id: 'u3', name: 'Freela Maria', role: 'freelancer', services: ['garçom', 'cozinha'] },
+  { id: 'u2', name: 'Freela João', role: 'freelancer', skills: ['garçom', 'segurança'], email: "freela@joao.com" },
+  { id: 'u3', name: 'Freela Maria', role: 'freelancer', skills: ['garçom', 'cozinha'], email: "freela@maria.com" },
+  { id: 'u4', name: 'Freela Pedro', role: 'freelancer', skills: ['recreação', 'cozinha'], email: "freela@pedro.com" },
 ];
 
 export const mockEvents: Event[] = [
